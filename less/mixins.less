@@ -1,1 +1,17 @@
 // Mixins Here
+.center(@justify, @align, @direction){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+    flex-direction: @direction;
+}
+
+.signUpButtonStyles(@bgcolor, @textcolor){
+    border: none;
+    border-radius: 5px;
+    background: @bgcolor;
+    color: @textcolor;
+    padding: 8px 20px;
+    font-size: 1.8rem;
+    font-family: @general-text-font;
+}
