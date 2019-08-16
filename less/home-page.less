@@ -83,7 +83,8 @@
 
   .walk {
     margin-top: 60px;
-    border-top: 1px solid @main-border-color;
+    border: 1px solid @main-border-color;
+    border-width: 1px 0 1px; 
     padding: 50px 60px;
     display: flex;
     justify-content: center;
@@ -133,6 +134,45 @@
       flex-direction: column-reverse;
       align-items: center;
       padding: 50px 20px;
+    }
+  }
+
+  form {
+    .center(center, flex-start, column);
+    width: 100%;
+
+    h2 {
+      padding: 20px 0 0 20px;
+    }
+
+    .signUpFormText {
+      width: 100%;
+      margin: 0 auto;
+      .center(center, flex-start, column);
+      font-size: 1.5rem;
+      padding: 20px;
+      
+      label {
+        margin-bottom: 5px;
+      }
+
+      input {
+        margin-bottom: 15px;
+        width: 90%;
+        padding: 6px;
+        border: 1px solid grey;
+        border-radius: 5px;
+
+        @media @phone {
+          width: 100%;
+        }
+      }
+
+      .submitButton {
+        .signUpButtonStyles(@btn-bg-color, white);
+        width: 60%;
+        margin: 0 auto;
+      }
     }
   }
 }// home
