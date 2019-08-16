@@ -167,7 +167,9 @@ nav {
   flex-direction: column;
   width: 100%;
   height: 120px;
-  background: #ebebeb;
+  background: #F6F6F6;
+  font-family: #454A59;
+  border: #F1F1F1;
 }
 nav h1 {
   font-size: 4.2rem;
@@ -175,7 +177,7 @@ nav h1 {
 }
 nav a {
   text-decoration: none;
-  color: black;
+  color: rgba(0, 0, 0, 0.7);
   font-size: 1.5rem;
   padding: 20px;
 }
@@ -270,6 +272,13 @@ footer {
   padding: 8px 20px;
   font-size: 1.8rem;
   font-family: 'Ubuntu', sans-serif;
+  transition: all 0.3s;
+}
+.home .walk .walk-text .btn:hover {
+  background: white;
+  color: #22283A;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
