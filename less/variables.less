@@ -25,6 +25,43 @@
 @waterloo: #81848E;
 @btn-bg-color: #22283A;
 @border-real: #dee2e6;
+@link-bg-color: rgba(0, 34, 99, .2);
+@link-border-color: rgba(0, 34, 99, .6);
+
 
 // Mobile var
 @phone: ~'(max-width: 500px)';
+
+// Image Transitions on page load
+@keyframes imageOneFloat {
+    0% {transform: translate3d(529px, 0px, 100px); opacity: 0};
+    50% {transform: translate3d(265px, 100px, 100px); opacity: .5};
+    100% {transform: translate3d(0, 0, 100px); opacity: 1}; 
+}
+
+@keyframes imageTwoFloat {
+    0% {opacity: 0};
+    100% {opacity: 1}; 
+}
+
+@keyframes imageThreeFloat {
+    0% {transform: translate3d(-529px, 0, 100px); opacity: 0};
+    50% {transform: translate3d(-265px, -100px, 100px); opacity: .5};
+    100% {transform: translate3d(0, 0, 100px); opacity: 1}; 
+}
+
+@keyframes rocketLaunch {
+    0% {transform: translateY(529px); opacity: 0};
+    100% {transform: translateY(0); opacity: 1};    
+}
+
+@keyframes navigationDropIn {
+    0% {transform: translateY(-200px);};
+    100% {transform: translateY(0px);};
+}
+
+@keyframes titleSlideIn {
+    0% {transform: translateX(-2000px);};
+    75% {transform: translateX(100px);};
+    100% {transform: translateX(0);};
+}

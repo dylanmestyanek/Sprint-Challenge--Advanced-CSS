@@ -1,6 +1,7 @@
 // Home Content
 
 .home {
+  padding-top: 120px;
 
   .intro {
     
@@ -32,9 +33,22 @@
       height: 100%;
     }
 
+    .blast{
+      animation: imageOneFloat 1.8s;
+    }
+
+    .sky {
+      animation: imageTwoFloat 3s;
+    }
+
+    .launch {
+      animation: imageThreeFloat 1.8s;
+    }
+
     @media @phone {
       .blast {
         width: 95%;
+        animation: rocketLaunch 1.5s;
       }
 
       .sky {
