@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+    <strong>Answer:</strong> An adaptive design typically has several design layouts, for a few different devices. For example, a desktop design, a mobile design, and a tablet design. On the other hand, a fully responsive design, will be able to adjust to any screen size, and any format. Fully responsive designs will look clean and organized, regardless of where they are viewed.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+    <strong>Answer:</strong> Depending on what format you design your site first, determines if it is considered "mobile first" or "desktop first". For example, if a site was designed "mobile first", then your main CSS styling would be structured around the mobile layout. Your media queries would use "min-width" to determine when to apply those styles for larger size screens. Mobile -> Large Mobile -> Tablet -> Desktop. The opposite result would apply for a "desktop first" design.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+    <strong>Answer:</strong> Setting the `font-size: 62.5%` in the `html` tag allows the site's font size to adapt to the user's font-size settings in the browser. For example, if the user selects the "Large" font size in Google Chrome, the font size on your website will adjust accordingly. <em> Note: </em> This will only apply if you are measuring your font size in a responsive measurement such as `rem`, or a percentage.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+    <strong>Answer:</strong> Preprocessing are programs you can install, such as Less or Sass, and incorporate into your CSS to better organize your code. Preprocessors allow for modifications that vanilla CSS doesn't allow, such as: nesting, variables, mixins, etc. Preprocessors assist you in following the rule of "DRY - Don't Repeat Yourself", by allowing you to write lines of code once, and use them multiple times throughout your CSS.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+    <strong>Answer:</strong> My favorite concept in preprocessing is nesting, and variables. Nesting allows you to format your CSS similar to the way your HTML is laid out and makes it easier to read, and edit. Variables allow you to save a snippit of code, without having to remember specific details of the code, every time you want to add it in somewhere - for example: a specific font family, or color. The concept that could potentially provide the most trouble is the separation of files. While it is convenient, and organized, while in a rush, you could easily skip over the file you're looking for, or forget where you placed certain styles. In comparison to vanilla CSS, where all of the code is directly in front of you, you don't run the risk of "losing" code for a little while.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

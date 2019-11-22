@@ -1,1 +1,30 @@
 // Mixins Here
+.center(@justify, @align, @direction){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+    flex-direction: @direction;
+}
+
+.textStyles(@font-family, @text-color){
+    font-family: @font-family;
+    color: @text-color;
+}
+
+.signUpButtonStyles(@bgcolor, @textcolor){
+    border: none;
+    border-radius: 5px;
+    background: @bgcolor;
+    color: @textcolor;
+    padding: 8px 20px;
+    font-size: 1.8rem;
+    font-family: @general-text-font;
+    transition: all .3s;
+
+    &:hover {
+        background: @textcolor;
+        color: @bgcolor;
+        cursor: pointer;
+        transition: all .3s;
+    }
+}

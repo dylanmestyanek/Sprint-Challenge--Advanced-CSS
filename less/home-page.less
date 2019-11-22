@@ -1,8 +1,14 @@
 // Home Content
 
 .home {
+  padding-top: 120px;
 
   .intro {
+    
+    .headerImg {
+      width: 100%;
+      border-radius: 5px;
+    }
 
     h2 {
       padding: 15px;
@@ -11,7 +17,8 @@
     p {
       padding:0 15px;
     }
-  
+
+    
   }
 
   .space-images {
@@ -25,6 +32,37 @@
       border-radius: 20px;
       height: 100%;
     }
+
+    .blast{
+      animation: imageOneFloat 1.8s;
+    }
+
+    .sky {
+      animation: imageTwoFloat 3s;
+    }
+
+    .launch {
+      animation: imageThreeFloat 1.8s;
+    }
+
+    @media @phone {
+      .blast {
+        width: 95%;
+        animation: rocketLaunch 1.5s;
+      }
+
+      .sky {
+        display: none;
+      }
+
+      .launch {
+        display: none;
+      }
+    }
+
+    @media @phone {
+      padding: 0 10px;
+    }
   }
 
   .visit-planets {
@@ -37,11 +75,16 @@
     p {
       margin-top: 13px;
     }
+
+    @media @phone {
+      padding: 15px 22px;
+    }
   }
 
   .walk {
     margin-top: 60px;
-    border-top: 1px solid @main-border-color;
+    border: 1px solid @main-border-color;
+    border-width: 1px 0 1px; 
     padding: 50px 60px;
     display: flex;
     justify-content: center;
@@ -58,6 +101,16 @@
       }
 
       .btn {
+       .signUpButtonStyles(@btn-bg-color, white);
+
+       @media @phone {
+         width: 100%;
+         padding: 20px;
+       }
+      }
+
+      @media @phone {
+        width: 100%;
       }
     }
 
@@ -69,6 +122,68 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+      }
+
+      @media @phone {
+        width: 100%;
+        margin: 0 0 10px;
+      }
+    }
+  
+    @media @phone {
+      flex-direction: column-reverse;
+      align-items: center;
+      padding: 50px 20px;
+    }
+  }
+
+  form {
+    .center(center, flex-start, column);
+    width: 100%;
+
+    h2 {
+      padding: 20px 0 0 20px;
+    }
+
+    .signUpFormText {
+      width: 100%;
+      margin: 0 auto;
+      .center(center, flex-start, column);
+      font-size: 1.5rem;
+      padding: 20px;
+      
+      label {
+        margin-bottom: 5px;
+      }
+
+      input {
+        margin-bottom: 15px;
+        width: 90%;
+        padding: 6px;
+        border: 1px solid grey;
+        border-radius: 5px;
+
+        @media @phone {
+          width: 100%;
+        }
+      }
+
+      .submitButton {
+        .signUpButtonStyles(@btn-bg-color, white);
+        width: 60%;
+        margin: 0 auto;
+      }
+
+      textarea {
+        width: 90%;
+        border-radius: 5px;
+        font-family: @general-text-font;
+        padding: 10px;
+        margin-bottom: 15px;
+        
+        @media @phone {
+          width: 100%;
+        }
       }
     }
   }
